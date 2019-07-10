@@ -1,4 +1,4 @@
-# campaign-qa-check using the cpnnaming package
+# campaign-qa-check
 Brado Internal Tool to make sure our paid media campaigns follow our campaign naming template.
 The package will perform quality check and return campaign names that are not following naming template. 
 
@@ -23,24 +23,14 @@ The package will perform quality check and return campaign names that are not fo
 5. **New rules should always be updated into the Google Sheets file "Campaign Naming Convention" before check failed campaign names!**
 
 
-# Installation
-
-Install the whole package 
-```sh
-$ pip install cpnnaming
-```
 ## Functions in package
 * [*retrieve_data*] - connect to the dataset and download qa check campaign names as a data table 
 ```sh
-from cpnnaming.retrieve_data import cntdb
+ import cntdb
 ```
-* [*qa_check*] - QA check for each campaign names retreived and return campaign names that fails the QA check 
+* [*QA_CHECKING.qa_check*] - QA check for each campaign names retreived and return campaign names that fails the QA check 
 ```sh
- from cpnnaming.qa_check import qa_checking
-```
-* [*upload_result*] - upload campaign names that fails the QA check back to the dataset
- ```sh
-from cpnnaming.qa_check import upld_file
+ import qa_checking
 ```
 
 
